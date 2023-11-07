@@ -84,6 +84,15 @@
         .navegacion {
             font-size: 17px;
             padding-bottom: 20px;
+            
+            .menufooter{
+                width: 80%;
+                padding: 15px;
+                li{
+                    line-height: 50px;
+                }
+            }
+           
         }
 
         .maps {
@@ -159,16 +168,19 @@
             "copyright"
             " maps";
 
-        .navegacion {
-
-            width: 28rem;
-            justify-content: center;
-            font-size: 13px;
-            margin: 2px auto;
-            line-height: 3rem;
-
-
-        }
+            .navegacion {
+                font-size: 17px;
+                padding-bottom: 20px;
+                
+                .menufooter{
+                    width: 80%;
+                    padding: 15px;
+                    li{
+                        line-height: 50px;
+                    }
+                }
+               
+            }
 
         form {
             display: flex;
