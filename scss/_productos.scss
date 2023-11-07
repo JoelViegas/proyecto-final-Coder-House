@@ -8,10 +8,13 @@
         text-align: center;
         overflow: hidden;
         position: relative;
+        box-shadow: $sombraCajas;
 
         a {
             text-decoration: none;
         }
+
+        
 
         img {
             width: 100%;
@@ -63,6 +66,9 @@
                     &:hover {
                         background-color: #0004ff;
                     }
+                    &:active{
+                        font-size: $botonActivo;
+                    }
                 }
 
 
@@ -75,4 +81,13 @@
 
 
     }
+    
+}
+.page-item a {
+    color: white;
+    background-color: #141414;
+    &:active{
+        font-size: $botonActivo;
+    }
+
 }

@@ -1,5 +1,5 @@
 header {
-    background-color: #2980b9;
+    background-color: #687EFF;
     width: 100%;
 
     .logo {
@@ -19,10 +19,11 @@ header {
 
                 &:hover {
                     opacity: 0.5;
-                    border: 2px double rgb(255, 255, 255);
+                    
 
                 }
-
+               
+               
             }
 
         }
@@ -37,14 +38,15 @@ header {
             font-size: 1.2rem;
 
             &:hover {
-                color: #000988;
+                color: #000000;
                 background-color: #6ea1ff;
                 border-radius: 10px;
 
             }
 
             &:active {
-                color: chocolate;
+                color: #ffffff;
+                font-size: $botonActivo;
             }
 
         }
