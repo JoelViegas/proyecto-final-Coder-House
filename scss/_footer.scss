@@ -1,0 +1,96 @@
+.containerFooter {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-auto-columns: 1fr;
+
+    grid-auto-flow: row;
+    grid-template-areas:
+        "navegacion navegacion navegacion"
+        "suscripcion copyright maps"
+        "suscripcion copyright maps";
+    width: 100%;
+
+    .navegacion {
+        grid-area: navegacion;
+
+        .menufooter {
+            margin-top: 20px;
+            padding-bottom: 50px;
+
+            li {
+                display: inline;
+                margin: 10px;
+
+                a {
+                    text-decoration: none;
+                    color: #fff;
+
+                    img {
+                        width: 25px;
+                        margin: -5px;
+                    }
+                }
+            }
+        }
+    }
+
+    .suscripcion {
+        grid-area: suscripcion;
+        padding-left: 15px;
+
+        form {
+            text-align: center;
+           
+
+            label {
+                font-size: 18px;
+                color: #d6d6d6;
+                margin-right: 10px;
+
+            }
+
+            .emailcampo {
+                font-size: 16px;
+                padding: 10px;
+                border: 1px solid #333;
+
+            }
+
+            .button {
+                background-color: #333;
+                color: #fff;
+                font-size: 16px;
+                padding: 10px 20px;
+                border: none;
+                cursor: pointer;
+
+                &:hover {
+                    background-color: #555;
+                }
+            }
+        }
+    }
+
+    .copyright {
+        grid-area: copyright;
+    }
+
+    .maps {
+        grid-area: maps;
+        justify-self: end;
+
+        iframe {
+
+            grid-area: maps;
+            width: 10rem;
+            height: 10 rem;
+            margin-right: 20px;
+
+        }
+
+    }
+
+
+
+}
