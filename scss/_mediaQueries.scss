@@ -36,31 +36,33 @@
         opacity: 1;
     }
 
-    /*media 768px para la main de prodcuctos*/
+    .item {
+        border: 10px solid #727272;
+        text-align: center;
+        overflow: hidden;
+        position: relative;
+        box-shadow: $sombraCajas;
+
+        a {
+            text-decoration: none;
+        }
+
+        
+
+        img {
+            width: 100%;
+            height: auto;
+            object-fit: cover;
+        }
+
+        
 
 
-    /*achico el tamaño de letra de la descripcion de cada producto*/
-    .descripcion {
 
-        font-size: 10px;
-        font-weight: bold;
+
     }
 
-    /*achico el tamaño del precio de cada producto*/
-    .precio {
-
-        font-size: 10px;
-
-    }
-
-    /*achico el boton de agregar al carrito de cada producto*/
-    .botonCarrito {
-
-
-        font-size: 1px;
-
-    }
-
+    
 
 
 
@@ -80,7 +82,7 @@
         row-gap: 30px;
 
         .navegacion {
-            font-size: 15px;
+            font-size: 17px;
             padding-bottom: 20px;
         }
 
