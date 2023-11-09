@@ -1,5 +1,5 @@
 .articulo {
-    display: flex;
+
     margin: 20px;
 
     img {
@@ -19,9 +19,35 @@
         border: 1px solid;
         box-shadow: $sombraCajas;
 
+        
         &::first-letter {
             font-size: 150%;
             font-weight: bold;
+        }
+    }
+}
+
+
+.container {
+    padding-top: 100px;
+    display: flex;
+    justify-content: center;
+
+    .row {
+        justify-content: center;
+        
+        
+        @each $imagen in $imagenes {
+            .caja-con-imagen-#{$imagen} {
+
+                width: 250px;
+                height: 200px;
+                margin: 10px;
+
+                img {
+                    width: 100%;
+                }
+            }
         }
     }
 }

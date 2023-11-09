@@ -47,7 +47,7 @@
             text-decoration: none;
         }
 
-        
+
 
         img {
             width: 100%;
@@ -55,14 +55,14 @@
             object-fit: cover;
         }
 
-        
+
 
 
 
 
     }
 
-    
+
 
 
 
@@ -84,15 +84,16 @@
         .navegacion {
             font-size: 17px;
             padding-bottom: 20px;
-            
-            .menufooter{
+
+            .menufooter {
                 width: 80%;
                 padding: 15px;
-                li{
+
+                li {
                     line-height: 50px;
                 }
             }
-           
+
         }
 
         .maps {
@@ -119,6 +120,21 @@
 
 
         }
+
+    }
+
+    /*media para la pagina de Acerca de nosotros*/
+
+    .contenedor-cajas-acerca-de {
+        grid-auto-columns: 1fr;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        grid-template-areas:
+            "caja-acercade-1 caja-acercade-2"
+            "caja-acercade-3 caja-acercade-4";
+        width: 100%;
+        margin-bottom: 5rem;
+
 
     }
 
@@ -155,6 +171,24 @@
         grid-template-columns: repeat(2, 1fr);
     }
 
+
+    /*media para la pagina de Acerca de nosotros*/
+
+    .contenedor-cajas-acerca-de {
+        grid-auto-columns: 1fr;
+        grid-template-columns: 1fr ;
+        grid-template-rows: 1fr ;
+        grid-template-areas:
+            "caja-acercade-1" 
+            "caja-acercade-2"
+            "caja-acercade-3"
+            "caja-acercade-4";
+        width: 100%;
+        margin-bottom: 5rem;
+
+
+    }
+
     /*media del footer*/
     .containerFooter {
         /*cambio las columnas y filas del footer*/
@@ -168,19 +202,20 @@
             "copyright"
             " maps";
 
-            .navegacion {
-                font-size: 17px;
-                padding-bottom: 20px;
-                
-                .menufooter{
-                    width: 80%;
-                    padding: 15px;
-                    li{
-                        line-height: 50px;
-                    }
+        .navegacion {
+            font-size: 17px;
+            padding-bottom: 20px;
+
+            .menufooter {
+                width: 80%;
+                padding: 15px;
+
+                li {
+                    line-height: 50px;
                 }
-               
             }
+
+        }
 
         form {
             display: flex;

@@ -126,19 +126,153 @@ footer {
   padding-top: 20px;
 }
 
-.formulario {
+.banner {
+  padding-bottom: 150px;
+}
+.banner .propaganda {
+  box-sizing: border-box;
+}
+@media (max-width: 768px) {
+  .banner .propaganda {
+    width: 100%;
+    height: 6rem;
+  }
+}
+.banner .propaganda.box1 {
+  border: 2px rgb(0, 0, 0);
+  border-radius: 10px;
+  padding: 10px;
+  background-image: url("/imagenes/fondotcno1.jpeg");
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  text-align: center;
+  font-size: 2rem;
+  color: white;
+  margin-bottom: 15px;
+}
+.banner .propaganda.box1::before {
+  content: "Tecnología de Primera";
+}
+.banner .propaganda.box2 {
+  border: 2px rgb(0, 0, 0);
+  border-radius: 1px;
+  padding: 10px;
+  background-image: url("/imagenes/fondotcno2.jpeg");
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  text-align: center;
+  font-size: 2rem;
+  color: white;
+  margin-bottom: 15px;
+}
+.banner .propaganda.box2::before {
+  content: "Envíos a Todo el País";
+}
+.banner .propaganda.box3 {
+  border: 2px rgb(0, 0, 0);
+  border-radius: 10px;
+  padding: 10px;
+  background-image: url("/imagenes/fondotcno3.jpeg");
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  text-align: center;
+  font-size: 2rem;
+  color: white;
+  margin-bottom: 15px;
+}
+.banner .propaganda.box3::before {
+  content: "Todos los Medios de Pago";
+}
+.banner .propaganda.box4 {
+  border: 2px rgb(0, 0, 0);
+  border-radius: 1px;
+  padding: 10px;
+  background-image: url("/imagenes/fondotcno4.jpeg");
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  text-align: center;
+  font-size: 2rem;
+  color: white;
+  margin-bottom: 15px;
+}
+.banner .propaganda.box4::before {
+  content: "La Mejor Garantía";
+}
+
+.dejanosUnComentario {
   padding-top: 75px;
   padding-bottom: 75px;
   background-color: #818FB4;
   text-align: center;
   font-size: 20px;
 }
-.formulario .campos {
-  text-align: center;
-  padding-top: 75px;
-  width: 100%;
+.dejanosUnComentario h2 {
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
+  padding-bottom: 50px;
+  color: white;
 }
-
+.dejanosUnComentario .emailcampo, .dejanosUnComentario .formCampos input,
+.dejanosUnComentario .formCampos select,
+.dejanosUnComentario .formCampos textarea {
+  width: 100%;
+  box-sizing: border-box;
+  padding: 8px;
+  border: 1px solid #ccc;
+  background-color: #ffffff;
+  margin-top: 5px;
+}
+.dejanosUnComentario .buttonForm, .dejanosUnComentario .formCampos .botones input[type=submit], .dejanosUnComentario .formCampos .botones input[type=reset] {
+  width: 48%;
+  background-color: #3498db;
+  color: #ffffff;
+  padding: 8px;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+.dejanosUnComentario .buttonForm:hover, .dejanosUnComentario .formCampos .botones input[type=submit]:hover, .dejanosUnComentario .formCampos .botones input[type=reset]:hover {
+  background-color: #2c3e50;
+}
+.dejanosUnComentario .formCampos {
+  max-width: 400px;
+  margin: 20px auto;
+  padding: 20px;
+  background-color: #f4f4f4;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+.dejanosUnComentario .formCampos div {
+  margin-bottom: 15px;
+}
+.dejanosUnComentario .formCampos div label {
+  color: #333;
+}
+.dejanosUnComentario .formCampos select {
+  cursor: pointer;
+}
+.dejanosUnComentario .formCampos textarea {
+  resize: vertical;
+}
+.dejanosUnComentario .formCampos .sexos label {
+  margin-bottom: 20px;
+}
+.dejanosUnComentario .formCampos .sexos .radio-group {
+  display: flex;
+  flex-direction: column;
+  line-height: 50px;
+}
+.dejanosUnComentario .formCampos .botones {
+  display: flex;
+  justify-content: space-between;
+}
+.dejanosUnComentario .formCampos .botones input[type=reset] {
+  background-color: #e74c3c;
+}
 .containerTienda {
   display: grid;
   grid-template-columns: repeat(5, 1fr);
@@ -211,7 +345,6 @@ footer {
 }
 
 .articulo {
-  display: flex;
   margin: 20px;
 }
 .articulo img {
@@ -233,6 +366,47 @@ footer {
   font-weight: bold;
 }
 
+.container {
+  padding-top: 100px;
+  display: flex;
+  justify-content: center;
+}
+.container .row {
+  justify-content: center;
+}
+.container .row .caja-con-imagen-imagen1 {
+  width: 250px;
+  height: 200px;
+  margin: 10px;
+}
+.container .row .caja-con-imagen-imagen1 img {
+  width: 100%;
+}
+.container .row .caja-con-imagen-imagen2 {
+  width: 250px;
+  height: 200px;
+  margin: 10px;
+}
+.container .row .caja-con-imagen-imagen2 img {
+  width: 100%;
+}
+.container .row .caja-con-imagen-imagen3 {
+  width: 250px;
+  height: 200px;
+  margin: 10px;
+}
+.container .row .caja-con-imagen-imagen3 img {
+  width: 100%;
+}
+.container .row .caja-con-imagen-imagen4 {
+  width: 250px;
+  height: 200px;
+  margin: 10px;
+}
+.container .row .caja-con-imagen-imagen4 img {
+  width: 100%;
+}
+
 .estilo-acercade {
   background-color: #ffffff;
   padding: 20px;
@@ -249,6 +423,96 @@ footer {
   font-size: 16px;
   color: #666;
   line-height: 1.5;
+}
+
+.contenedor-cajas-acerca-de {
+  display: grid;
+  display: grid;
+  justify-content: center;
+  text-align: center;
+  grid-auto-columns: 1fr;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr;
+  gap: 0px 20px;
+  grid-template-areas: "caja-acercade-1 caja-acercade-2 caja-acercade-3 caja-acercade-4";
+  width: 100%;
+  margin-bottom: 5rem;
+}
+.contenedor-cajas-acerca-de .caja-acercade-1 {
+  width: 15rem;
+  height: 13rem;
+  margin: 10px;
+  background-color: #ffffff;
+  border-radius: 15px;
+  justify-self: center;
+  grid-area: auto;
+}
+.contenedor-cajas-acerca-de .caja-acercade-1 img {
+  border-radius: 20px;
+  margin-bottom: 10px;
+  width: 85%;
+  height: 90%;
+}
+.contenedor-cajas-acerca-de .caja-acercade-1 span {
+  font-size: 1.3rem;
+  color: rgb(78, 78, 78) bold;
+}
+.contenedor-cajas-acerca-de .caja-acercade-2 {
+  width: 15rem;
+  height: 13rem;
+  margin: 10px;
+  background-color: #ffffff;
+  border-radius: 15px;
+  justify-self: center;
+  grid-area: auto;
+}
+.contenedor-cajas-acerca-de .caja-acercade-2 img {
+  border-radius: 20px;
+  margin-bottom: 10px;
+  width: 85%;
+  height: 90%;
+}
+.contenedor-cajas-acerca-de .caja-acercade-2 span {
+  font-size: 1.3rem;
+  color: rgb(78, 78, 78) bold;
+}
+.contenedor-cajas-acerca-de .caja-acercade-3 {
+  width: 15rem;
+  height: 13rem;
+  margin: 10px;
+  background-color: #ffffff;
+  border-radius: 15px;
+  justify-self: center;
+  grid-area: auto;
+}
+.contenedor-cajas-acerca-de .caja-acercade-3 img {
+  border-radius: 20px;
+  margin-bottom: 10px;
+  width: 85%;
+  height: 90%;
+}
+.contenedor-cajas-acerca-de .caja-acercade-3 span {
+  font-size: 1.3rem;
+  color: rgb(78, 78, 78) bold;
+}
+.contenedor-cajas-acerca-de .caja-acercade-4 {
+  width: 15rem;
+  height: 13rem;
+  margin: 10px;
+  background-color: #ffffff;
+  border-radius: 15px;
+  justify-self: center;
+  grid-area: auto;
+}
+.contenedor-cajas-acerca-de .caja-acercade-4 img {
+  border-radius: 20px;
+  margin-bottom: 10px;
+  width: 85%;
+  height: 90%;
+}
+.contenedor-cajas-acerca-de .caja-acercade-4 span {
+  font-size: 1.3rem;
+  color: rgb(78, 78, 78) bold;
 }
 
 .containerFooter {
@@ -407,6 +671,15 @@ footer {
   label .emailcampo {
     font-size: 15px;
   }
+  /*media para la pagina de Acerca de nosotros*/
+  .contenedor-cajas-acerca-de {
+    grid-auto-columns: 1fr;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas: "caja-acercade-1 caja-acercade-2" "caja-acercade-3 caja-acercade-4";
+    width: 100%;
+    margin-bottom: 5rem;
+  }
 }
 @media screen and (max-width: 480px) {
   /*media del header*/
@@ -427,6 +700,15 @@ footer {
   /*media de la pagina de productos*/
   .containerTienda {
     grid-template-columns: repeat(2, 1fr);
+  }
+  /*media para la pagina de Acerca de nosotros*/
+  .contenedor-cajas-acerca-de {
+    grid-auto-columns: 1fr;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    grid-template-areas: "caja-acercade-1" "caja-acercade-2" "caja-acercade-3" "caja-acercade-4";
+    width: 100%;
+    margin-bottom: 5rem;
   }
   /*media del footer*/
   .containerFooter {

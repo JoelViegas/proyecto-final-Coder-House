@@ -17,3 +17,55 @@
         line-height: 1.5;
     }
 }
+
+
+
+.contenedor-cajas-acerca-de {
+    display: grid;
+    display: grid;
+    justify-content: center;
+    text-align: center;
+    grid-auto-columns: 1fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    gap: 0px 20px;
+    grid-template-areas:
+        "caja-acercade-1 caja-acercade-2 caja-acercade-3 caja-acercade-4";
+    width: 100%;
+    margin-bottom: 5rem;
+
+
+
+
+
+    @for $i from 1 through $numero-de-cajas-acerca-de {
+        .caja-acercade-#{$i} {
+            width: $ancho-de-caja-acerca-de;
+            height: $alto-de-caja-acerca-de;
+            margin: 10px;
+            background-color: #ffffff;
+            border-radius: 15px;
+            justify-self: center;
+            grid-area: auto;
+
+            img {
+                border-radius: 20px;
+                margin-bottom: 10px;
+                width: 85%;
+                height: 90%;
+            }
+
+            span {
+
+                font-size: 1.3rem;
+                color: rgb(78, 78, 78) bold;
+
+
+            }
+
+
+        }
+
+
+    }
+}

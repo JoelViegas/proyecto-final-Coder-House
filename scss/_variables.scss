@@ -1,2 +1,41 @@
 $sombraCajas: 0 6px 10px 0 rgba(0, 0, 0, 0.5);
 $botonActivo: 1.3rem;
+$numero-de-cajas-acerca-de: 4;
+$ancho-de-caja-acerca-de: 15rem;
+$alto-de-caja-acerca-de: 13rem;
+$imagenes-ruta: "imagenes/";
+$imagenes: "imagen1", "imagen2", "imagen3", "imagen4";
+$form-background-color: #f4f4f4;
+$input-background-color: #ffffff;
+$input-border: 1px solid #ccc;
+$input-padding: 8px;
+$label-color: #333;
+$button-background-color: #3498db;
+$button-color: #ffffff;
+$button-hover-color: #2c3e50;
+$propaganda-border: 2px rgb(0, 0, 0);
+$propaganda-padding: 10px;
+$propaganda-font-size: 2rem;
+
+@mixin propaganda-box($background-image, $texto, $bordeRadial) {
+
+    border: $propaganda-border;
+    border-radius: $bordeRadial;
+    padding: $propaganda-padding;
+    background-image: url('#{$background-image}');
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    text-align: center;
+    font-size: $propaganda-font-size;
+    color: white;
+    margin-bottom: 15px;
+
+    &::before {
+        content: '#{$texto}';
+    }
+
+
+}
+
+

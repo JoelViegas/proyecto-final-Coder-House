@@ -79,23 +79,22 @@
   </header>
   <h1>Contacto</h1>
 
-  <main class="formulario">
-    <h2>Dejanos un comentario</h2>
+  <main class="dejanosUnComentario">
+    <h2 class="mb-1" >Dejanos un comentario</h2>
+    <form class="formCampos" action="">
 
-    <form class="campos" action="">
-
-      <div>
-        <label for="name"> Nombre </label>
+      <div >
+        <label for="name"> Nombre </label><br>
         <input class="emailcampo" type="text" placeholder="Nombre" name="name" required>
       </div>
       <br>
       <div>
-        <label for="surname"> Apellido </label>
+        <label for="surname"> Apellido </label><br>
         <input class="emailcampo" type="text" placeholder="Apellido" name="surname" required>
       </div>
       <br>
       <div>
-        <label for="mail"> E-Mail </label>
+        <label for="mail"> E-Mail </label><br>
         <input class="emailcampo" type="email" placeholder="e-mail" name="mail" required>
       </div>
       <br>
@@ -114,10 +113,12 @@
         <input class="emailcampo" type="checkbox" id="checkbox" name="checkbox" value="si">
       </div>
       <br>
-      <div>
-        <label for="sexo"> Dinos tu sexo </label>
+      <div class="sexos">
+        <label for="sexo"> <b>Dinos tu sexo</b> </label>
+        <div class="radio-group">
         <input type="radio" name="sexo" value="hombre"> Hombre
         <input type="radio" name="sexo" value="mujer"> Mujer
+      </div>
 
       </div>
       <br>
@@ -129,9 +130,9 @@
       </div>
 
       <br>
-      <div>
-        <input class="button" type="reset" value="Limpiar formulario">
-        <input class="button" type="submit" value="Enviar">
+      <div class="botones">
+        <input class="buttonForm" type="reset" value="Limpiar formulario">
+        <input class="buttonForm" type="submit" value="Enviar">
 
       </div>
     </form>

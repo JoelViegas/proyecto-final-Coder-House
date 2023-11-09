@@ -1,15 +1,111 @@
-.formulario {
+.dejanosUnComentario {
     padding-top: 75px;
     padding-bottom: 75px;
     background-color: #818FB4;
     text-align: center;
     font-size: 20px;
 
-    .campos {
-        text-align: center;
-        padding-top: 75px;
-        width: 100%;
-       
+    h2 {
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        padding-bottom: 50px;
+
+        color: white;
+
 
     }
+
+
+    %base-input {
+        width: 100%;
+        box-sizing: border-box;
+        padding: $input-padding;
+        border: $input-border;
+        background-color: $input-background-color;
+        margin-top: 5px;
+    }
+
+    %button {
+        width: 48%;
+        background-color: $button-background-color;
+        color: $button-color;
+        padding: $input-padding;
+        border: none;
+        border-radius: 3px;
+        cursor: pointer;
+        transition: background-color 0.3s;
+
+        &:hover {
+            background-color: $button-hover-color;
+        }
+    }
+
+    .formCampos {
+        max-width: 400px;
+        margin: 20px auto;
+        padding: 20px;
+        background-color: $form-background-color;
+        border-radius: 5px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+
+        div {
+            margin-bottom: 15px;
+
+            label {
+                color: $label-color;
+            }
+        }
+
+        input,
+        select,
+        textarea {
+            @extend %base-input;
+        }
+
+        select {
+            cursor: pointer;
+        }
+
+        textarea {
+            resize: vertical;
+        }
+
+        .sexos {
+            label {
+                margin-bottom: 20px;
+            }
+
+            .radio-group {
+                display: flex;
+                flex-direction: column;
+                line-height: 50px;
+
+
+            }
+        }
+
+        .botones {
+            display: flex;
+            justify-content: space-between;
+
+            input[type="reset"] {
+                @extend %button;
+                background-color: #e74c3c;
+            }
+
+            input[type="submit"] {
+                @extend %button;
+            }
+        }
+    }
+
+    .emailcampo {
+        @extend %base-input;
+    }
+
+    .buttonForm {
+        @extend %button;
+    }
+
+
+
 }

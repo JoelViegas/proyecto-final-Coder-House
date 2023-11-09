@@ -45,3 +45,43 @@
         padding-top: 20px;
     }
 }
+
+
+
+.banner {
+   padding-bottom: 150px;
+
+
+    .propaganda {
+        box-sizing: border-box;
+
+
+        @media (max-width: 768px) {
+            width: 100%;
+            height: 6rem;
+
+        }
+
+        &.box1 {
+            @include propaganda-box('/imagenes/fondotcno1.jpeg', 'Tecnología de Primera', 10px);
+            
+
+
+
+        }
+
+        &.box2 {
+            @include propaganda-box('/imagenes/fondotcno2.jpeg', 'Envíos a Todo el País',1px);
+
+
+        }
+
+        &.box3 {
+            @include propaganda-box('/imagenes/fondotcno3.jpeg', 'Todos los Medios de Pago',10px);
+        }
+
+        &.box4 {
+            @include propaganda-box('/imagenes/fondotcno4.jpeg', 'La Mejor Garantía' , 1px);
+        }
+    }
+}
