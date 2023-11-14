@@ -67,7 +67,7 @@
 
     &.box1 {
 
-        @include background-image('imagenes/fondotcno1.jpeg');
+        @include background-image('/imagenes/fondotcno1.jpeg');
     }
 
     &.box2 {
