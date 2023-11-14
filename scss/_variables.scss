@@ -13,29 +13,15 @@ $label-color: #333;
 $button-background-color: #3498db;
 $button-color: #ffffff;
 $button-hover-color: #2c3e50;
-$propaganda-border: 2px rgb(0, 0, 0);
-$propaganda-padding: 10px;
-$propaganda-font-size: 2rem;
-
-@mixin propaganda-box($background-image, $texto, $bordeRadial) {
-
-    border: $propaganda-border;
-    border-radius: $bordeRadial;
-    padding: $propaganda-padding;
-    background-image: url('#{$background-image}');
+@mixin background-image($image) {
+    background-image: url($image);
     background-size: cover;
     background-position: center;
-    position: relative;
-    text-align: center;
-    font-size: $propaganda-font-size;
-    color: white;
-    margin-bottom: 15px;
-
-    &::before {
-        content: '#{$texto}';
-    }
-
-
+    opacity: 1;
+    border-radius: 20px;
 }
-
+@keyframes typing {
+    from { width: 0; }
+    to { width: 100%; }
+}
 
