@@ -126,7 +126,7 @@ footer {
   flex-wrap: nowrap;
   justify-content: space-evenly;
   overflow: hidden;
-  margin-top: 50px;
+  margin-top: 100px;
 }
 .galeria img {
   width: 100x;
@@ -151,7 +151,8 @@ footer {
   width: 100%;
   height: 250px;
   margin: 5px;
-  margin-bottom: 20px;
+  margin-bottom: 50px;
+  margin-top: 50px;
 }
 .image-box.box1 {
   background-image: url("/imagenes/fondotcno1.jpeg");
@@ -222,6 +223,10 @@ footer {
     width: calc(50% - 10px);
   }
 }
+.tituloContacto {
+  padding: 20px;
+}
+
 .dejanosUnComentario {
   padding-top: 75px;
   padding-bottom: 75px;
@@ -292,6 +297,10 @@ footer {
 .dejanosUnComentario .formCampos .botones input[type=reset] {
   background-color: #e74c3c;
 }
+.tituloDeProductos {
+  padding: 20px;
+}
+
 .containerTienda {
   display: grid;
   grid-template-columns: repeat(5, 1fr);
@@ -361,6 +370,10 @@ footer {
 }
 .page-item a:active {
   font-size: 1.3rem;
+}
+
+.tituloDeComoFuncinona {
+  padding: 20px;
 }
 
 .tituloComoFunciona {
@@ -441,6 +454,10 @@ footer {
 }
 .container .row .caja-con-imagen-imagen4 img {
   width: 100%;
+}
+
+.tituloAcercaDe {
+  padding: 20px;
 }
 
 .estilo-acercade {
@@ -673,6 +690,29 @@ footer {
     height: auto;
     object-fit: cover;
   }
+  /*media de la main de contacto*/
+  label {
+    font-size: 20px;
+  }
+  label .emailcampo {
+    font-size: 15px;
+  }
+  /*media para la pagina de Acerca de nosotros*/
+  .estilo-acercade {
+    margin: 25px;
+  }
+  .estilo-acercade p {
+    text-align: center;
+    line-height: 30px;
+  }
+  .contenedor-cajas-acerca-de {
+    grid-auto-columns: 1fr;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas: "caja-acercade-1 caja-acercade-2" "caja-acercade-3 caja-acercade-4";
+    width: 100%;
+    margin-bottom: 5rem;
+  }
   /*media para el footer*/
   .containerFooter {
     grid-template-columns: 1fr;
@@ -700,22 +740,6 @@ footer {
     width: 40rem;
     height: 6rem;
   }
-  /*media de la main de contacto*/
-  label {
-    font-size: 20px;
-  }
-  label .emailcampo {
-    font-size: 15px;
-  }
-  /*media para la pagina de Acerca de nosotros*/
-  .contenedor-cajas-acerca-de {
-    grid-auto-columns: 1fr;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 1fr;
-    grid-template-areas: "caja-acercade-1 caja-acercade-2" "caja-acercade-3 caja-acercade-4";
-    width: 100%;
-    margin-bottom: 5rem;
-  }
 }
 @media screen and (max-width: 480px) {
   /*media del header*/
@@ -738,6 +762,13 @@ footer {
     grid-template-columns: repeat(2, 1fr);
   }
   /*media para la pagina de Acerca de nosotros*/
+  .estilo-acercade {
+    margin: 25px;
+  }
+  .estilo-acercade p {
+    text-align: center;
+    line-height: 30px;
+  }
   .contenedor-cajas-acerca-de {
     grid-auto-columns: 1fr;
     grid-template-columns: 1fr;
@@ -745,6 +776,19 @@ footer {
     grid-template-areas: "caja-acercade-1" "caja-acercade-2" "caja-acercade-3" "caja-acercade-4";
     width: 100%;
     margin-bottom: 5rem;
+  }
+  /*media de la main de como funciona*/
+  .tituloComoFunciona h2 {
+    /*achico la letra de la pagina de "como funciona"*/
+    font-size: 25px;
+  }
+  .articulo img {
+    width: 10rem;
+    height: 10rem;
+  }
+  /*media de la main de contacto*/
+  .dejanosUnComentario h2 {
+    font-size: 30px;
   }
   /*media del footer*/
   .containerFooter {
@@ -790,20 +834,6 @@ footer {
     margin: 0 auto;
     width: 18rem;
     height: 8rem;
-  }
-  /*media de la main de como funciona*/
-  .tituloComoFunciona h2 {
-    /*achico la letra de la pagina de "como funciona"*/
-    font-size: 25px;
-  }
-  .articulo img {
-    width: 10rem;
-    height: 10rem;
-  }
-  /*media de la main de contacto*/
-  .formulario h2 {
-    /*achico la letra de la pagina de contacto*/
-    font-size: 25px;
   }
 }
 

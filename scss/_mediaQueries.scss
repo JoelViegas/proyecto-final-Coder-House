@@ -61,15 +61,43 @@
 
 
     }
-    
-    
 
 
 
+    /*media de la main de contacto*/
+    label {
+        font-size: 20px;
+
+        .emailcampo {
+            font-size: 15px;
 
 
+        }
+
+    }
+
+    /*media para la pagina de Acerca de nosotros*/
+    .estilo-acercade {
+        margin: 25px;
+
+        p {
+            text-align: center;
+            line-height: 30px;
+        }
+    }
+
+    .contenedor-cajas-acerca-de {
+        grid-auto-columns: 1fr;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        grid-template-areas:
+            "caja-acercade-1 caja-acercade-2"
+            "caja-acercade-3 caja-acercade-4";
+        width: 100%;
+        margin-bottom: 5rem;
 
 
+    }
 
     /*media para el footer*/
     .containerFooter {
@@ -113,33 +141,6 @@
 
 
 
-    /*media de la main de contacto*/
-    label {
-        font-size: 20px;
-
-        .emailcampo {
-            font-size: 15px;
-
-
-        }
-
-    }
-
-    /*media para la pagina de Acerca de nosotros*/
-
-    .contenedor-cajas-acerca-de {
-        grid-auto-columns: 1fr;
-        grid-template-columns: 1fr 1fr;
-        grid-template-rows: 1fr 1fr;
-        grid-template-areas:
-            "caja-acercade-1 caja-acercade-2"
-            "caja-acercade-3 caja-acercade-4";
-        width: 100%;
-        margin-bottom: 5rem;
-
-
-    }
-
 
 }
 
@@ -176,17 +177,49 @@
 
     /*media para la pagina de Acerca de nosotros*/
 
+    .estilo-acercade {
+        margin: 25px;
+
+        p {
+            text-align: center;
+            line-height: 30px;
+        }
+    }
+
     .contenedor-cajas-acerca-de {
         grid-auto-columns: 1fr;
-        grid-template-columns: 1fr ;
-        grid-template-rows: 1fr ;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr;
         grid-template-areas:
-            "caja-acercade-1" 
+            "caja-acercade-1"
             "caja-acercade-2"
             "caja-acercade-3"
             "caja-acercade-4";
         width: 100%;
         margin-bottom: 5rem;
+
+
+
+    }
+
+
+
+    /*media de la main de como funciona*/
+    .tituloComoFunciona h2 {
+        /*achico la letra de la pagina de "como funciona"*/
+        font-size: 25px;
+    }
+
+    .articulo img {
+        width: 10rem;
+        height: 10rem;
+    }
+
+    /*media de la main de contacto*/
+    .dejanosUnComentario h2 {
+
+        font-size: 30px;
+
 
 
     }
@@ -267,23 +300,5 @@
     }
 
 
-
-    /*media de la main de como funciona*/
-    .tituloComoFunciona h2 {
-        /*achico la letra de la pagina de "como funciona"*/
-        font-size: 25px;
-    }
-
-    .articulo img {
-        width: 10rem;
-        height: 10rem;
-    }
-
-    /*media de la main de contacto*/
-    .formulario h2 {
-        /*achico la letra de la pagina de contacto*/
-        font-size: 25px;
-
-    }
 
 }
