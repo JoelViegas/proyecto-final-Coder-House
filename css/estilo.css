@@ -155,28 +155,28 @@ footer {
   margin-top: 50px;
 }
 .image-box.box1 {
-  background-image: url("/imagenes/fondotcno1.jpeg");
+  background-image: url("./imagenes/fondotcno1.jpeg");
   background-size: cover;
   background-position: center;
   opacity: 1;
   border-radius: 20px;
 }
 .image-box.box2 {
-  background-image: url("/imagenes/fondotcno2.jpeg");
+  background-image: url("./imagenes/fondotcno2.jpeg");
   background-size: cover;
   background-position: center;
   opacity: 1;
   border-radius: 20px;
 }
 .image-box.box3 {
-  background-image: url("/imagenes/fondotcno3.jpeg");
+  background-image: url("/.imagenes/fondotcno3.jpeg");
   background-size: cover;
   background-position: center;
   opacity: 1;
   border-radius: 20px;
 }
 .image-box.box4 {
-  background-image: url("/imagenes/fondotcno4.jpeg");
+  background-image: url("./imagenes/fondotcno4.jpeg");
   background-size: cover;
   background-position: center;
   opacity: 1;

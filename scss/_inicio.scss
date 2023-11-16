@@ -67,22 +67,22 @@
 
     &.box1 {
 
-        @include background-image('/imagenes/fondotcno1.jpeg');
+        @include background-image('./imagenes/fondotcno1.jpeg');
     }
 
     &.box2 {
-        @include background-image('/imagenes/fondotcno2.jpeg');
+        @include background-image('./imagenes/fondotcno2.jpeg');
         
     }
 
     &.box3 {
-        @include background-image('/imagenes/fondotcno3.jpeg');
+        @include background-image('/.imagenes/fondotcno3.jpeg');
        
        
     }
 
     &.box4 {
-        @include background-image('/imagenes/fondotcno4.jpeg');
+        @include background-image('./imagenes/fondotcno4.jpeg');
     }
 
     .cajaTexto {
