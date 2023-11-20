@@ -14,11 +14,9 @@ $label-color: #333;
 $button-background-color: #3498db;
 $button-color: #ffffff;
 $button-hover-color: #2c3e50;
-@mixin background-image($image) {
-    background-image: url($image);
-    background-size: cover;
-    background-position: center;
-    opacity: 1;
+@mixin background-color($color) {
+    background-color: $color;
+    opacity: 0.9;
     border-radius: 20px;
 }
 @keyframes typing {
