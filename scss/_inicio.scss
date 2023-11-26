@@ -65,6 +65,7 @@
     margin-bottom: 50px;
     margin-top: 50px;
 
+
     &.box1 {
 
         @include background-color(#2f2c79);
@@ -84,6 +85,10 @@
     &.box4 {
         @include background-color(#675cb0);
     }
+
+    
+
+
 
     .cajaTexto {
         display: flex;
@@ -108,7 +113,7 @@
                 padding: 15px;
             }
 
-            @media  (max-width: 320px) {
+            @media (max-width: 320px) {
                 font-size: 12px;
                 padding: 18px;
             }
@@ -125,8 +130,6 @@
         flex-wrap: wrap;
         justify-content: space-between;
 
-        .image-box {
-            width: calc(50% - 10px);
-        }
+        
     }
 }

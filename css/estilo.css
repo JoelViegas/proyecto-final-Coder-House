@@ -211,9 +211,6 @@ footer {
     flex-wrap: wrap;
     justify-content: space-between;
   }
-  .image-section .image-box {
-    width: calc(50% - 10px);
-  }
 }
 .tituloContacto {
   padding: 20px;
@@ -643,7 +640,10 @@ footer {
 
 @media screen and (max-width: 768px) {
   /*media para el header*/
-  .seccion3 {
+  header .animate__animated {
+    animation: none !important;
+  }
+  header .seccion3 {
     /*para la seccion del header*/
     width: 100%;
     grid-template-columns: 1fr 1fr;
@@ -652,14 +652,14 @@ footer {
     grid-auto-flow: row;
     grid-template-areas: "cart contacto";
   }
-  .seccion3 .cart {
+  header .seccion3 .cart {
     justify-self: end;
     margin-right: 5px;
   }
-  .seccion3 .cart img {
+  header .seccion3 .cart img {
     margin: 10px;
   }
-  .seccion3 .contacto {
+  header .seccion3 .contacto {
     justify-self: start;
     margin-left: 5px;
   }
